@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 //tags = "@login",
 
 plugin = { "pretty", "html:target/reports/index.html", 
-		   "pretty", "json:target/reports/cucumber.json",
+           "pretty", "json:target/reports/cucumber.json",
            "pretty", "junit:target/reports/cucumber.xml",
            "pretty", "testng:target/reports/cucumber.xml" } )
 
