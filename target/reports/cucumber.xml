@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="6" skipped="0" total="7">
+    <suite duration-ms="9155" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="9155" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="To check the functionality for creation of new user">
+                <test-method duration-ms="4229" finished-at="2022-05-06T07:05:59.679613Z" name="Create new user" started-at="2022-05-06T07:05:55.317354600Z" status="PASS"/>
+            </class>
+            <class name="To retrieve the data for particular user using ID">
+                <test-method duration-ms="674" finished-at="2022-05-06T07:06:00.393020500Z" name="Get user detail with the help of his/her ID" started-at="2022-05-06T07:05:59.711493300Z" status="FAIL">
+                    <exception class="java.lang.AssertionError">
+                        <message><![CDATA[Given Navigate to the home page.............................................passed
+When Provide the ID of the user.............................................passed
+Then Validate positive response code and output.............................failed
+]]></message>
+                        <full-stacktrace><![CDATA[java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at stepDefinition.stepDefinition02.validate_positive_response_code(stepDefinition02.java:38)
+	at ✽.Validate positive response code and output(file:///C:/Users/arun.r19/eclipse-workspace/RaRestAssured/src/test/resources/Feature/logIn02.feature:7)
+]]></full-stacktrace>
+                    </exception>
+                </test-method>
+            </class>
+            <class name="To check and validate login functionality with positive response code received">
+                <test-method duration-ms="667" finished-at="2022-05-06T07:06:01.091557300Z" name="Login with a positive set of credential" started-at="2022-05-06T07:06:00.419811800Z" status="PASS"/>
+            </class>
+            <class name="To retrieve and assert the data for particular user using ID">
+                <test-method duration-ms="333" finished-at="2022-05-06T07:06:01.442269Z" name="Get user detail with the help of his/her ID for assertion" started-at="2022-05-06T07:06:01.103468900Z" status="PASS"/>
+            </class>
+            <class name="To check and validate the functionality when user is created @negativeScenario">
+                <test-method duration-ms="1064" finished-at="2022-05-06T07:06:02.519811700Z" name="ReqRes Page failure" started-at="2022-05-06T07:06:01.450873900Z" status="PASS"/>
+            </class>
+            <class name="To check and validate and assert the functionality when user is created">
+                <test-method duration-ms="346" finished-at="2022-05-06T07:06:02.895145500Z" name="Foreign Exchange Page failure for assertion" started-at="2022-05-06T07:06:02.536794400Z" status="PASS"/>
+            </class>
+            <class name="Post with future date and validate">
+                <test-method duration-ms="1175" finished-at="2022-05-06T07:06:04.088897200Z" name="Foreign Exchange Page future date" started-at="2022-05-06T07:06:02.909422300Z" status="PASS"/>
+            </class>
+        </test>
+    </suite>
+</testng-results>
+..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Post with future date and validate" name="Foreign Exchange Page future date" time="1.179">
+        <system-out><![CDATA[Given API for foreign exchange two..........................................passed
+When posted with future date information....................................passed
+Then validate positive response code received from futuredate...............passed
+]]></system-out>
+    </testcase>
+</testsuite>
